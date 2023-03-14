@@ -157,16 +157,16 @@ employees = {
     'Eve' : 93121
 }
 #1
-top_managers = []
+mgrs_list = []
 for name in employees.keys():
     if employees[name] >= 100000:
-        top_managers.append(name)
-print(top_managers)  
+        mgrs_list.append(name)
+print(mgrs_list)  
 
 #2
-top_managers = [name for name, salary in employees.items() if salary >= 100000]
+mgrs_list = [name for name, salary in employees.items() if salary >= 100000]
 
-print(top_managers)
+print(mgrs_list)
 
 
 
